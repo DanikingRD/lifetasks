@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lifetasks/core/log.dart';
+import 'package:lifetasks/core/styles.dart';
 import 'package:lifetasks/router.dart';
 
 void main() {
@@ -15,10 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'LifeTasks',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      theme: kLightTheme,
       onGenerateRoute: generateRoutes,
     );
   }
