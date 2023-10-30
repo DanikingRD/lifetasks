@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 
-const kLightBgColor = Colors.white;
-const kLightHighlightColor = Color(0xFF333333);
+const kPrimaryColor = Color.fromARGB(255, 215, 66, 78);
+
 const TextStyle kPageHeaderTextStyle = TextStyle(
   fontSize: 32,
   fontWeight: FontWeight.bold,
 );
 
-ThemeData kLightTheme = ThemeData(
-  useMaterial3: true,
-  colorScheme: ColorScheme.fromSwatch(
-    backgroundColor: kLightBgColor,
-    primarySwatch: Colors.grey,
+ThemeData kTheme = ThemeData(
+  colorScheme: ColorScheme.fromSeed(
+    seedColor: kPrimaryColor,
+    brightness: Brightness.light,
   ),
+
+  // set small splash radius for Material widgets
 );

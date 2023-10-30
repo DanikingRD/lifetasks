@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'LifeTasks',
       debugShowCheckedModeBanner: false,
-      theme: kLightTheme,
+      theme: kTheme,
       onGenerateRoute: generateRoutes,
     );
   }
